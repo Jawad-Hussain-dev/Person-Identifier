@@ -33,9 +33,9 @@ def build_dataset(root_dir):
                 X.append(features)
                 y.append(current_label)
             except Exception as e:
-                print(f"❌ Failed to process {img_path}: {e}")
+                print(f" Failed to process {img_path}: {e}")
 
         current_label += 1
 
-    print("✅ Dataset built successfully.")
+    print(" Dataset built successfully.")
     return X, y, label_map
