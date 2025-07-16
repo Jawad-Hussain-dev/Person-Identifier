@@ -11,7 +11,7 @@ X, y, label_map = joblib.load("hog_dataset.pkl")
 reverse_map = {v: k for k, v in label_map.items()}
 
 root = tk.Tk()
-root.title("🧠 Person Identifier (HOG + Decision Tree)")
+root.title(" Person Identifier (HOG + Decision Tree)")
 root.geometry("900x700")
 root.configure(bg="#f0f4f7")
 
@@ -36,7 +36,7 @@ result_label.pack(pady=10)
 
 explain_frame = tk.Frame(root, bg="#f0f4f7")
 explain_frame.pack(pady=10)
-explain_title = tk.Label(explain_frame, text="🧾 Decision Path Explanation", font=("Helvetica", 14), bg="#f0f4f7")
+explain_title = tk.Label(explain_frame, text=" Decision Path Explanation", font=("Helvetica", 14), bg="#f0f4f7")
 explain_title.pack()
 explain_text = tk.Text(explain_frame, height=15, width=90, wrap="word", font=("Consolas", 10))
 explain_text.pack()
@@ -70,7 +70,7 @@ def upload_and_predict():
 
             for node_id in node_indicator.indices:
                 if leaf_id[0] == node_id:
-                    explanation += f"👉 Reached leaf node {node_id}\n"
+                    explanation += f" Reached leaf node {node_id}\n"
                 else:
                     feature = model.tree_.feature[node_id]
                     threshold = model.tree_.threshold[node_id]
@@ -81,11 +81,11 @@ def upload_and_predict():
             explain_text.insert(tk.END, explanation)
 
         except Exception as e:
-            result_label.config(text="❌ Error processing image", fg="red")
+            result_label.config(text=" Error processing image", fg="red")
             explain_text.delete("1.0", tk.END)
             explain_text.insert(tk.END, str(e))
 
-tk.Button(root, text="📂 Upload Image & Predict", command=upload_and_predict,
+tk.Button(root, text="Upload Image & Predict", command=upload_and_predict,
           font=("Helvetica", 14), bg="#3498db", fg="white", padx=10, pady=5).pack(pady=15)
 
 root.mainloop()
