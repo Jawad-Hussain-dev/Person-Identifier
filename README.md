@@ -1,8 +1,8 @@
-# 🧠 Person Identifier using HOG + Decision Tree
+#  Person Identifier using HOG + Decision Tree
 
 This project implements a lightweight and interpretable **Person Identification System** using **HOG (Histogram of Oriented Gradients)** features and a **Decision Tree Classifier**. Built for the course *Introduction to Computaional Thinking*, the focus is on explainability, interpretability, and modular thinking.
 
-## 🎯 Project Goals
+##  Project Goals
 
 - Apply **Computational Thinking (CT)** principles:
   - Decomposition
@@ -14,7 +14,7 @@ This project implements a lightweight and interpretable **Person Identification 
 - Provide a **GUI** for user-friendly testing of predictions
 - Visualize decision paths and most important features for interpretability
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 
@@ -27,21 +27,18 @@ Person-Identifier-HOG/
 │   ├── test\_predict.py
 │   └── gui\_predict.py
 │
-│
-├── data/                     # Optional: sample data for demo
-│
 ├── report.pdf                # IEEE format project report 
 ├── README.md                 # This file
 
 ````
 
-## 🧪 How to Run
+## How to Run
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Person-Identifier-HOG.git
-cd Person-Identifier-HOG
+git clone https://github.com/Jawad-Hussain-dev/Person-Identifier.git
+cd Person-Identifier
 ````
 
 ### 2. Install dependencies
@@ -77,14 +74,14 @@ Use the GUI to:
 * See the decision path
 * View the original + HOG visualizations
 
-## 📊 Sample Output
+##  Sample Output
 
-* ✅ Accuracy: 97.4%
-* 🧠 Model: Decision Tree (depth=10)
-* 📌 Explanation: Decision path and top features
-* 🖼 GUI: HOG + Original image display side-by-side
+*  Accuracy: 97.4%
+*  Model: Decision Tree (depth=10)
+*  Explanation: Decision path and top features
+*  GUI: HOG + Original image display side-by-side
 
-## 🧠 CT Principles in Action
+##  CT Principles in Action
 
 | Principle            | Application                                     |
 | -------------------- | ----------------------------------------------- |
@@ -93,12 +90,12 @@ Use the GUI to:
 | Abstraction          | Faces turned into numeric feature vectors       |
 | Algorithmic Thinking | Decision Tree rules used to predict & explain   |
 
-## 📄 Report
+##  Report
 
 For full details, methodology, and results, see:
 📎 **[report.pdf](./report.pdf)**
 
-## 👥 Team Members
+##  Team Members
 
 * Jawad Hussain
 * Abdullah Siraj Khan
