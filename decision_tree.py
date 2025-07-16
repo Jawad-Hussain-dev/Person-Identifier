@@ -27,11 +27,11 @@ def train_decision_tree(X, y, max_depth=10):
 
     y_pred = model.predict(X_test)
     acc = accuracy_score(y_test, y_pred)
-    print(f"✅ Decision Tree Accuracy: {acc * 100:.2f}%")
+    print(f" Decision Tree Accuracy: {acc * 100:.2f}%")
 
     # Print rules
     rules = export_text(model, max_depth=2, feature_names=[f'f{i}' for i in range(X.shape[1])])
-    print("\n📜 Sample Tree Rules (Depth 2):\n")
+    print("\n Sample Tree Rules (Depth 2):\n")
     print(rules)
 
     return model
