@@ -32,54 +32,6 @@ Person-Identifier-HOG/
 
 ````
 
-## How to Run
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/Jawad-Hussain-dev/Person-Identifier.git
-cd Person-Identifier
-````
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-or manually:
-
-```bash
-pip install opencv-python scikit-image scikit-learn matplotlib pillow joblib
-```
-
-### 3. Train the model
-
-```bash
-python train2.py
-```
-
-This builds the dataset, trains the Decision Tree, and saves it .
-
-### 4. Launch the GUI
-
-```bash
-python gui_predict.py
-```
-
-Use the GUI to:
-
-* Upload an image
-* Get the predicted person ID
-* See the decision path
-* View the original + HOG visualizations
-
-##  Sample Output
-
-*  Accuracy: 97.4%
-*  Model: Decision Tree (depth=10)
-*  Explanation: Decision path and top features
-*  GUI: HOG + Original image display side-by-side
 
 ##  CT Principles in Action
 
