@@ -19,7 +19,7 @@ This project implements a lightweight and interpretable **Person Identification 
 ```
 
 Person-Identifier-HOG/
-├── src/                      # All Python source files
+├                   # All Python source files
 │   ├── feature\_extraction.py
 │   ├── dataset\_builder.py
 │   ├── decision\_tree.py
@@ -27,9 +27,6 @@ Person-Identifier-HOG/
 │   ├── test\_predict.py
 │   └── gui\_predict.py
 │
-├── models/                   # Trained models
-│   ├── tree\_model.pkl
-│   └── hog\_dataset.pkl
 │
 ├── data/                     # Optional: sample data for demo
 │
@@ -62,15 +59,15 @@ pip install opencv-python scikit-image scikit-learn matplotlib pillow joblib
 ### 3. Train the model
 
 ```bash
-python src/train2.py
+python train2.py
 ```
 
-This builds the dataset, trains the Decision Tree, and saves it in `/models`.
+This builds the dataset, trains the Decision Tree, and saves it .
 
 ### 4. Launch the GUI
 
 ```bash
-python src/gui_predict.py
+python gui_predict.py
 ```
 
 Use the GUI to:
